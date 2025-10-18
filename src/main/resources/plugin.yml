@@ -4,3 +4,79 @@ main: me.willofsteel.itemManager.ItemManager
 api-version: '1.18'
 authors: [ neil ]
 website: wiki.willofsteel.me
+commands:
+  itemmanager:
+    description: Main ItemManager command
+    usage: /itemmanager <subcommand>
+    aliases: [imanager, im]
+
+permissions:
+  ItemManager.Admin:
+    description: Gives all ItemManager permissions
+    default: op
+    children:
+      ItemManager.Help: true
+      ItemManager.Reload: true
+      ItemManager.Give: true
+      ItemManager.Check: true
+      ItemManager.Remove: true
+      ItemManager.Rename: true
+      ItemManager.Lore.Set: true
+      ItemManager.Lore.Add: true
+      ItemManager.Lore.Remove: true
+      ItemManager.Enchant: true
+      ItemManager.Enchant.Remove: true
+      ItemManager.Glow: true
+      ItemManager.Glow.Remove: true
+
+  ItemManager.Help:
+    description: Access to help command
+    default: true
+
+  ItemManager.Reload:
+    description: Access to reload command
+    default: op
+
+  ItemManager.Give:
+    description: Access to give command
+    default: op
+
+  ItemManager.Check:
+    description: Access to check command
+    default: op
+
+  ItemManager.Remove:
+    description: Access to remove command
+    default: op
+
+  ItemManager.Rename:
+    description: Access to rename command
+    default: op
+
+  ItemManager.Lore.Set:
+    description: Access to lore set command
+    default: op
+
+  ItemManager.Lore.Add:
+    description: Access to lore add command
+    default: op
+
+  ItemManager.Lore.Remove:
+    description: Access to lore remove command
+    default: op
+
+  ItemManager.Enchant:
+    description: Access to enchant command
+    default: op
+
+  ItemManager.Enchant.Remove:
+    description: Access to enchant remove command
+    default: op
+
+  ItemManager.Glow:
+    description: Access to glow command
+    default: op
+
+  ItemManager.Glow.Remove:
+    description: Access to glow remove command
+    default: op

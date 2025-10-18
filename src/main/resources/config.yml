@@ -1,0 +1,26 @@
+# ItemManager Configuration
+
+# Storage settings
+storage:
+  use_database: true  # Set to false to use only YAML files
+
+# Symbol replacements
+symbols:
+  space: "_"
+  new_line: "|"
+
+# Command abbreviations
+abbreviations:
+  give:
+    test: "STONE"
+    sword: "DIAMOND_SWORD"
+    pickaxe: "DIAMOND_PICKAXE"
+  check/remove:
+    test: "mat:STONE"
+    any_sword: "mat:DIAMOND_SWORD"
+
+# Plugin settings
+settings:
+  log_all_actions: true
+  backup_inventories: true
+  max_backups_per_player: 10
