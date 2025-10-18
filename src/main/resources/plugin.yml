@@ -1,0 +1,6 @@
+name: ItemManager
+version: '1.0-SNAPSHOT'
+main: me.willofsteel.itemManager.ItemManager
+api-version: '1.18'
+authors: [ neil ]
+website: wiki.willofsteel.me
